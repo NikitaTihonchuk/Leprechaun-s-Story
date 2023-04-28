@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="FindPuzzleGame" customModuleProvider="target">
+            <connections>
+                <outlet property="exitButton" destination="MHd-JW-NhN" id="8BP-EU-d5f"/>
+                <outlet property="menuLabel" destination="4VP-we-4v2" id="TEq-r8-d8d"/>
+                <outlet property="playButton" destination="FNV-K9-7X4" id="hCz-Xh-GjT"/>
+                <outlet property="policyButton" destination="4uV-i0-jiV" id="YhW-vq-2P9"/>
+                <outlet property="rulesButton" destination="spL-45-hdK" id="Cp3-yn-zBZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstBack" translatesAutoresizingMaskIntoConstraints="NO" id="qhv-3O-FdZ">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNV-K9-7X4">
+                    <rect key="frame" x="50" y="173" width="293" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="oz0-b6-DZu"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=" ">
+                        <backgroundConfiguration key="background" image="playButton"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="playButtonDidTap:" destination="-1" eventType="touchUpInside" id="Dyi-wv-myz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spL-45-hdK">
+                    <rect key="frame" x="50" y="271" width="293" height="86"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=" ">
+                        <backgroundConfiguration key="background" image="rules"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="rulesButtonDidTap:" destination="-1" eventType="touchUpInside" id="LH4-cY-kfF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uV-i0-jiV">
+                    <rect key="frame" x="50" y="369" width="293" height="86"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=" ">
+                        <backgroundConfiguration key="background" image="policy"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="policyButtonDidTap:" destination="-1" eventType="touchUpInside" id="6vQ-EN-AzJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-JW-NhN">
+                    <rect key="frame" x="50" y="467" width="293" height="86"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=" ">
+                        <backgroundConfiguration key="background" image="exit"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="exitButtonDidTap:" destination="-1" eventType="touchUpInside" id="Zg2-Fo-ZJN"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VP-we-4v2">
+                    <rect key="frame" x="142" y="105" width="109.33333333333331" height="54"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4uV-i0-jiV" firstAttribute="top" secondItem="spL-45-hdK" secondAttribute="bottom" constant="12" id="1rM-vl-JOc"/>
+                <constraint firstItem="MHd-JW-NhN" firstAttribute="top" secondItem="4uV-i0-jiV" secondAttribute="bottom" constant="12" id="7Vw-8X-xAc"/>
+                <constraint firstAttribute="bottom" secondItem="qhv-3O-FdZ" secondAttribute="bottom" id="Hai-bU-XoJ"/>
+                <constraint firstItem="FNV-K9-7X4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="KTZ-as-sNX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="spL-45-hdK" secondAttribute="trailing" constant="50" id="Qbh-Tc-zRC"/>
+                <constraint firstItem="4VP-we-4v2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="105" id="TWU-NO-cgM"/>
+                <constraint firstItem="qhv-3O-FdZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WIe-qh-rbH"/>
+                <constraint firstItem="spL-45-hdK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="X3w-W8-kYH"/>
+                <constraint firstItem="4VP-we-4v2" firstAttribute="centerX" secondItem="qhv-3O-FdZ" secondAttribute="centerX" id="Yyz-1m-O8j"/>
+                <constraint firstItem="4uV-i0-jiV" firstAttribute="height" secondItem="FNV-K9-7X4" secondAttribute="height" id="akW-bK-SBd"/>
+                <constraint firstItem="MHd-JW-NhN" firstAttribute="height" secondItem="FNV-K9-7X4" secondAttribute="height" id="e64-Uh-vyr"/>
+                <constraint firstItem="MHd-JW-NhN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="hi2-br-QGQ"/>
+                <constraint firstItem="spL-45-hdK" firstAttribute="height" secondItem="FNV-K9-7X4" secondAttribute="height" id="k7O-JM-Ig4"/>
+                <constraint firstItem="4uV-i0-jiV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="lV5-a0-a0V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FNV-K9-7X4" secondAttribute="trailing" constant="50" id="uBR-8D-E61"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qhv-3O-FdZ" secondAttribute="trailing" id="uUy-U0-vNw"/>
+                <constraint firstItem="qhv-3O-FdZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ujP-av-Euf"/>
+                <constraint firstItem="FNV-K9-7X4" firstAttribute="top" secondItem="4VP-we-4v2" secondAttribute="bottom" constant="14" id="vRj-ST-uJO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4uV-i0-jiV" secondAttribute="trailing" constant="50" id="wZm-ES-Uqf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MHd-JW-NhN" secondAttribute="trailing" constant="50" id="yHb-gQ-6FO"/>
+                <constraint firstItem="spL-45-hdK" firstAttribute="top" secondItem="FNV-K9-7X4" secondAttribute="bottom" constant="12" id="yeM-Lc-hoV"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="exit" width="190.66667175292969" height="57.333332061767578"/>
+        <image name="firstBack" width="276" height="490.66665649414062"/>
+        <image name="playButton" width="190.66667175292969" height="57.333332061767578"/>
+        <image name="policy" width="190.66667175292969" height="57.333332061767578"/>
+        <image name="rules" width="190.66667175292969" height="57.333332061767578"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
